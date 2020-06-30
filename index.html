@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yap Docs</title>
+
+    <!-- bootstrap 3 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- bootstrap 3 cdn -->
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <!-- for code box -->
+    <link href="code/prism.css" rel="stylesheet">
+    <script src="code/prism.js" type="text/javascript"></script>
+    <!-- for code box -->
+
+    <!-- less -->
+    <link rel="stylesheet/less" type="text/css" href="css/main.less" />
+
+
+</head>
+
+<body data-spy="scroll" data-target=".side_nav_sec" data-offset="50">
+
+    <header class="nav_header tab_header">
+        <div class="col-md-2 no-pd side-logo-nav">
+            <div class="logo">
+                <img src="img/logo.png" class="img-responsive" />
+
+            </div>
+        </div>
+        <div class="col-md-10 side_nav__topsec">
+            <div class="mb_nav">
+
+            </div>
+            <div class="main_nav ">
+                <!-- <span class="close"></span> -->
+                <div class="search_sec">
+                    <input type="search" placeholder="Search Yap’s Documentation" />
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <!-- <li><a href="get_started.html">Get Started</a></li>
+                        <li><a href="docs.html">Docs</a></li>-->
+                        <li><a href="#">Libraries</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#" class="login_sep">login</a></li>
+                        <li class="login_btn"><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="content-sec">
+
+        <div class="side_nav_ismobile hidden-sm hidden-md visible-xs">
+            <div class="nav-sec">
+                <select class="side_nav_sec">
+                    <option><a href="">Register Customer</a></option>
+                    <option><a href="">Add Card</a></option>
+                    <option><a href="">Get Card details</a></option>
+                    <option><a href="">Get CVV</a></option>
+                    <option><a href="">Pay a Merchant or Pay @ Store</a></option>
+                    <option><a href="">Lock / Unlock</a></option>
+                    <option><a href="">Update Customer</a></option>
+                    <option><a href="">Set Pin</a></option>
+                    <option><a href="">Set Pin Process</a></option>
+                    <option><a href="">Card Replacement</a></option>
+
+                </select>
+            </div>
+        </div>
+
+        <section class="side-nav col-md-2 hidden-xs hidden-sm">
+            <div class="nav-sec">
+
+                <div class="doc_nav_bx">
+                    <label class="doc_cate">YAP DOCS</label>
+                    <ul class="side_nav_sec">
+                        <li class="drop_main">
+                            <label class="drop_hed clps">Introduction</label>
+                            <ul class="drop-nav">
+                                <li><a href="#docs">Docs</a></li>
+                                <li><a href="#security">Security </a></li>
+                                <li><a href="#msgstr">Message Structure</a></li>
+                                <li><a href="#error_msg">Error Message</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="doc_nav_bx api_nv_bx">
+                    <label class="doc_cate">Flows</label>
+                    <ul class="side_nav_sec">
+                        <li class="drop_main">
+                            <label class="drop_hed clps">Prepaid</label>
+                            <ul class="drop-nav">
+                                <li><a href="#getcvv">Get CVV</a></li>
+                                <li><a href="#lckunlck">Lock / Unlock</a></li>
+                                <li><a href="#paystore">Pay a Merchant or Pay @ Store</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop_main">
+                            <label class="drop_hed clps">Forex</label>
+                        </li>
+                        <li class="drop_main">
+                            <label class="drop_hed clps">Credit</label>
+                        </li>
+                        <li class="drop_main">
+                            <label class="drop_hed clps">Neo banking</label>
+                        </li>
+                        <li class="drop_main">
+                            <label class="drop_hed clps">Remittance</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cont-sec col-md-12 api_cont_sec" id="dcs">
+
+
+            <div class="content_inn_pages idv">
+
+                <div class="api_doc_section">
+
+                    <div class=" api_doc_header" id="get_started">
+                        <div class="api_doc_left">
+                            <!-- <div class="page_tag get_strt">Quick Start</div> -->
+                            <h2 class="api_tlt">Get Started</h2>
+                        </div>
+                        <div class="api_doc_right"></div>
+                    </div>
+
+                    <div class="api_doc_content" id="over_v">
+                        <div class="api_doc_left">
+                            <div class="api_cont_txtarea">
+                                <div class="pge_srt">
+                                    <div class="pge_txt">
+
+                                        <p>Hello World! We provide a state-of-the-art modular API platform for you to
+                                            build Fintech products with turbulence-free
+                                            money flow.
+                                        </p>
+                                        <p>Just dive into our API documentation to get a jumpstart on your Fintech
+                                            product building journey.</p>
+                                        <p>If you are in the mood to explore, then experience our APIs in our online
+                                            Sandbox set-up that has no effect on your live
+                                            data or interaction with banks/card networks</p>
+                                        <p>Explore our product suite and choose the solution that works for you.</p>
+
+                                    </div>
+
+
+                                    <div class="pge_txt">
+                                        <h4>Overview</h4>
+                                        <p>With these in-depth guides, we have made your take-off with YAP APIs as
+                                            turbulence-free as possible. In case of glitches
+                                            in take-off, radio, our help center, or just browse through our API docs.
+                                        </p>
+                                        <p>Each API key is valid only for a specific time frame. In case you lose them
+                                            or need a fresh set of keys, just head over
+                                            to your dashboard and generate one.</p>
+                                        <p>These keys are only for initial testing (using cleartext) in our Sandbox.
+                                            Once you complete the initial testing, then
+                                            you need to upgrade to our Pre-Prod environment.</p>
+
+                                    </div>
+
+                                    <div class="pge_txt">
+                                        <div class="ind_code_sec">
+                                            <div class="desc">
+                                                <h5>Authentication</h5>
+                                                <p> Once you sign up, you will receive a set of API keys via email to
+                                                    authenticate requests.</p>
+                                                <p> Each API key is valid only for a specific time frame. In case you
+                                                    lose them
+                                                    or need a fresh set of keys, just head over
+                                                    to your dashboard and generate one.</p>
+                                                <p>These keys are only for initial testing (using cleartext) in our
+                                                    Sandbox.
+                                                    Once you complete the initial testing, then
+                                                    you need to upgrade to our Pre-Prod environment.
+                                                </p>
+                                            </div>
+
+                                            <div class="desc">
+                                                <h5>Pre-Prod Environment</h5>
+                                                <p> Our Pre-Prod environment uses a mix of keys/certificates based on
+                                                    mutual
+                                                    authentication. At this stage, we require a bit
+                                                    more information about your server's IPs, certificates, and so on
+                                                </p>
+                                                <p> You also need to specify a set of attributes (here) that you want to
+                                                    integrate with
+                                                    the product. Once we assimilate the
+                                                    necessary information, our Tech Team will deploy a custom Pre-Prod
+                                                    environment
+                                                    suited to your business.</p>
+                                                <p>Along with this set-up, we will also provide the required
+                                                    Authentication parameters
+                                                    and Security framework. You might
+                                                    need to develop these two factors to suit your production
+                                                    environment.
+                                                </p>
+                                            </div>
+
+                                            <div class="desc">
+                                                <h5>Production Environment</h5>
+                                                <p> Once the product reaches the production stage, all API calls will be
+                                                    authenticated
+                                                    using the Keys/Certificates based on
+                                                    mutual authentication.</p>
+                                                <p> Here again, you might need to provide a similar set of information
+                                                    to obtain the
+                                                    authentication parameters. You can do
+                                                    so by filling up this form.</p>
+                                                <p> Along with this set-up, we will also provide the required
+                                                    Authentication parameters
+                                                    and Security framework. You might
+                                                    need to develop these two factors to suit your production
+                                                    environment.
+                                                </p>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="pge_txt">
+
+                                        <div class="elpr_dev_tools get_strt_sec">
+                                            <h2>Explore the developer tools</h2>
+
+                                            <p class="sub-txt">Get step-by-step guides for deploying your first app and
+                                                mastering the basics of
+                                                Yap</p>
+
+                                            <div class="tool_sec">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                        <div class="tool_sec_inn">
+                                                            <span class="cov">
+                                                                <div class="icn_sec api"></div>
+                                                                <div class="cat_txt_sec">
+                                                                    <h3>API Reference</h3>
+                                                                    <p>Discover all YAP API resources</p>
+                                                                </div>
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                        <div class="tool_sec_inn">
+                                                            <span class="cov">
+                                                                <div class="icn_sec client_server"></div>
+                                                                <div class="cat_txt_sec">
+                                                                    <h3>Client &amp; Server Libraries</h3>
+                                                                    <p>Access all the libraries including community’s
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                        <div class="tool_sec_inn">
+                                                            <span class="cov">
+                                                                <div class="icn_sec community"></div>
+                                                                <div class="cat_txt_sec">
+                                                                    <h3>YAP Community</h3>
+                                                                    <p>Follow #Yap in Stackoverflow</p>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="pge_txt">
+                                        <div class="elpr_dev_tools get_strt_sec suport_sec">
+                                            <h2>Support</h2>
+
+                                            <p class="sub-txt">Get step-by-step guides for deploying your first app and
+                                                mastering the basics of
+                                                Yap</p>
+
+                                            <div class="tool_sec">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                        <div class="tool_sec_inn">
+                                                            <span class="cov">
+                                                                <div class="icn_sec faq"></div>
+                                                                <div class="cat_txt_sec">
+                                                                    <h3>Have you checked our FAQ’s?</h3>
+                                                                    <p>Search our FAQ page for quick guides and “How to”
+                                                                        Instructions</p>
+                                                                </div>
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                        <div class="tool_sec_inn">
+                                                            <span class="cov">
+                                                                <div class="icn_sec tech_support"></div>
+                                                                <div class="cat_txt_sec">
+                                                                    <h3>Technical Support from YAP</h3>
+                                                                    <p>Generate tokens for your queries and get answers
+                                                                        from
+                                                                        Team YAP</p>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                        <div class="tool_sec_inn">
+                                                            <span class="cov">
+                                                                <div class="icn_sec bug_report"></div>
+                                                                <div class="cat_txt_sec">
+                                                                    <h3>Report a bug or Integration issue</h3>
+                                                                    <p>Open a ticket to report a bug or ask for
+                                                                        integration
+                                                                        help</p>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="api_doc_right">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="api_doc_section" id="docs">
+
+                    <div class=" api_doc_header">
+                        <div class="api_doc_left">
+                            <!-- <div class="page_tag get_strt">Quick Start</div> -->
+                            <h2 class="api_tlt">Docs</h2>
+                        </div>
+                        <div class="api_doc_right"></div>
+                    </div>
+
+                    <div class="api_doc_content">
+                        <div class="api_doc_left">
+                            <div class="api_cont_txtarea">
+                                <div class="pge_srt">
+                                    <div class="pge_txt" id="scope">
+                                        <h4>Scope</h4>
+                                        <p>With this quickstart guide, we’ve tried to make it as easy as possible to
+                                            get
+                                            up
+                                            and running with
+                                            YAP.
+                                        </p>
+                                        <p>We’ll start with an overview of YAP and then jump start your integration
+                                            with
+                                            a step-by-step
+                                            guide and code samples in Ruby, Python, and Node. If you’d like to
+                                            follow
+                                            along (and test it
+                                            out!), clone the quickstart repository for the complete example apps.
+                                            You’ll
+                                            want to sign up
+                                            for free API keys to get started.</p>
+                                    </div>
+
+                                    <div class="note_sec">
+                                        <p>If you have any questions along the way, please head to the Support
+                                            Center or
+                                            refer to the
+                                            API documentation.</p>
+                                    </div>
+
+                                    <div class="pge_txt" id="prereq">
+                                        <h4>Pre-requisites</h4>
+                                        <p>We’ll start with an overview of YAP and then jump start your integration
+                                            with
+                                            a step-by-step
+                                            guide and code samples in Ruby, Python, and Node. If you’d like to
+                                            follow
+                                            along (and test it
+                                            out!), clone the quickstart repository for the complete example apps.
+                                            You’ll
+                                            want to sign up
+                                            for free API keys to get started.</p>
+                                    </div>
+
+                                    <div class="pge_txt">
+                                        <h4>Accessing data</h4>
+                                        <p>Once you create an Item, you can then access data—such as transaction
+                                            data
+                                            and account and routing numbers—using our API
+                                            endpoints. You access data for an Item using the Item’s access_token,
+                                            which
+                                            is specific to your API keys and cannot be
+                                            shared or used by any other API keys. By default, an access_token never
+                                            expires, but you can rotate it.</p>
+
+                                        <p>Once you create an Item, you can then access data—such as transaction
+                                            data
+                                            and account and routing numbers—using our API
+                                            endpoints. You access data for an Item using the Item’s access_token,
+                                            which
+                                            is specific to your API keys and cannot be
+                                            shared or used by any other API keys. By default, an access_token never
+                                            expires, but you can rotate it.</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="api_doc_right">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <section>
+
+
+
+                <div class="content_inn_pages" id="prepaidval">
+
+
+                    <div class="api_doc_section" id="security">
+
+                        <div class="api_doc_header">
+                            <div class="api_doc_left">
+                                <!-- <div class="page_tag get_strt">Quick Start</div> -->
+                                <h2 class="api_tlt">Security</h2>
+                            </div>
+                            <div class="api_doc_right"></div>
+                        </div>
+
+                        <div class="api_doc_content">
+                            <div class="api_doc_left">
+                                <div class="api_cont_txtarea">
+                                    <div class="pge_srt">
+
+                                        <div class="secu pge_txt">
+
+                                            <ul class="secu_lst">
+                                                <li>YAP API engine follows REST based architecture.</li>
+                                                <li>For test environment, all API calls will be authenticated using Http
+                                                    basic
+                                                    authentication.</li>
+                                                <li>For B2B production environment, API calls will be authenticated
+                                                    using certificates
+                                                    based mutual authentication.</li>
+                                                <li>For B2C production environment, all API calls will beauthenticated
+                                                    using API tokens
+                                                    over SSL authentication.</li>
+                                            </ul>
+
+                                            <p>To enable quick integration a SIT environment has been created and the
+                                                details have been
+                                                provided in this document. Once the business is able to test the APIs
+                                                successfully,
+                                                YAPwould promote the instance to a Pre-Prod environment that will have
+                                                an additional
+                                                layer of YAPSecurity framework.</p>
+
+                                            <p>The security implementation details along with the relevant artifacts
+                                                shall be shared
+                                                separately based on project’s progress.</p>
+
+                                            <div class="more_info">
+                                                <div class="info_txt"><span></span>More Information</div>
+
+                                                <div class="mre_note">
+                                                    <ul class="secu_lst">
+                                                        <li>Find out more about REST APIs </li>
+                                                        <li>Find out more about API environments</li>
+                                                        <li>Find out more about B2B and B2C Production</li>
+                                                        <li>You must be in the YAP Partner Program to make calls on
+                                                            behalf of a third
+                                                            party</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="api_doc_right">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="api_doc_section" id="msgstr">
+
+                        <div class="api_doc_header">
+                            <div class="api_doc_left">
+                                <!-- <div class="page_tag get_strt">Quick Start</div> -->
+                                <h2 class="api_tlt">Message Structure</h2>
+                            </div>
+                            <div class="api_doc_right"></div>
+                        </div>
+
+                        <div class="api_doc_content">
+                            <div class="api_doc_left">
+                                <div class="api_cont_txtarea">
+                                    <div class="pge_srt">
+
+                                        <div class="pge_sectins">
+
+                                            <p> The commonly used message structure for HTTP request headers &amp;
+                                                Payloads.</p>
+
+                                            <div class="pge_txt">
+                                                <h4>HTTP request headers</h4>
+                                                <div class="ind_code_sec struc">
+                                                    <div class="desc">
+                                                        <h5>Authorization</h5>
+                                                        <span class="code_patch"> AuthenticationData </span>
+                                                    </div>
+
+                                                    <div class="desc">
+                                                        <h5>Content-Type</h5>
+                                                        <span class="code_patch"> application/json </span>
+                                                    </div>
+
+                                                    <div class="desc">
+                                                        <h5>TENANT</h5>
+                                                        <span class="code_patch"> YAP to Provide </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="pge_txt">
+                                                <h4>Payload</h4>
+                                                <div class="ind_code_sec struc">
+                                                    <div class="desc">
+                                                        <h5>Request Method</h5>
+                                                        <span class="code_patch"> POST/GET </span>
+                                                    </div>
+
+                                                    <div class="desc">
+                                                        <h5>Content-Type</h5>
+                                                        <p>The request format, which is required for operations with a
+                                                            request body. The
+                                                            syntax is: <span class="code_patch"> application/json
+                                                            </span></p>
+
+                                                        <div class="code_bx code_bx_cont">
+                                                            <div class="tlt_sec">
+                                                                <div class="ac_center">
+
+                                                                    <span class="copy_code">Copy</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="c_prt">
+                                                                <pre
+                                                                    class=" language-json"><code class=" language-json">Content-Type<span class="token operator">:</span> application/ &lt; format &gt;</code></pre>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="api_doc_right">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="api_doc_section" id="error_msg">
+
+                        <div class="api_doc_header">
+                            <div class="api_doc_left">
+                                <!-- <div class="page_tag get_strt">Quick Start</div> -->
+                                <h2 class="api_tlt">Error Message</h2>
+                            </div>
+                            <div class="api_doc_right"></div>
+                        </div>
+
+                        <div class="api_doc_content">
+                            <div class="api_doc_left">
+                                <div class="api_cont_txtarea">
+                                    <div class="pge_srt">
+
+                                        <div class="pge_sectins secu">
+
+
+                                            <p>This section provides the compilation of error messages generated by the
+                                                system. You may
+                                                choose to display a user
+                                                friendly message.</p>
+                                            <p>Client’s system needs to look out for the following fields in the error
+                                                message, as these
+                                                fields will contain the
+                                                details of the error.</p>
+
+                                            <ul class="secu_lst er_msg">
+                                                <li>detailMessage</li>
+                                                <li>shortMessage</li>
+
+                                            </ul>
+
+                                            <p>If any other error received, Client needs to raise a ticket with YAP and
+                                                will be serviced
+                                                appropriately.</p>
+
+                                            <div class="api_lst_sec">
+
+                                                <div class="api_doc_table">
+
+                                                    <h2>YAP Platform Error Codes
+                                                    </h2>
+                                                    <div class="">
+                                                        <div class="api_lst_sec table api_table">
+                                                            <div class="lst_hed tr">
+                                                                <span class="th">Code</span>
+                                                                <span class="th">Message</span>
+                                                            </div>
+
+                                                            <div class="api_descs tr">
+                                                                <div class="desc_right td">Y101</div>
+                                                                <div class="desc_right td">OTP expired please regenerate
+                                                                    OTP</div>
+                                                            </div>
+
+                                                            <div class="api_descs tr">
+                                                                <div class="desc_right td">Y102</div>
+                                                                <div class="desc_right td">Your maximum attempt
+                                                                    exhausted</div>
+                                                            </div>
+                                                            <div class="api_descs tr">
+                                                                <div class="desc_right td">Y103</div>
+                                                                <div class="desc_right td">Invalid OTP</div>
+                                                            </div>
+                                                            <div class="api_descs tr">
+                                                                <div class="desc_right td">Y104</div>
+                                                                <div class="desc_right td">Data Exception</div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="api_doc_right">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <section id="apilist">
+
+                        <div class=" api_doc_section" id="getcvv">
+
+                            <div class="api_doc_header">
+                                <div class="api_doc_left">
+                                    <h2 class="api_tlt">Get CVV</h2>
+                                </div>
+                                <div class="api_doc_right"></div>
+                            </div>
+
+                            <div class="api_doc_content">
+                                <div class="api_doc_left">
+                                    <div class="api_cont_txtarea">
+                                        <p>This API is to be used to fetch CVV of a registered card and applicable only
+                                            for
+                                            Virtual
+                                            Cards</p>
+                                    </div>
+
+                                    <div class="api_doc_table">
+
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table api_verticle_table">
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">API URL</span>
+                                                    <div class="desc_right td">
+                                                        <a href="">https://<< BASE URL>
+                                                                >/Yap/business-entity-manager/generateCVV</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">HTTP Method</span>
+                                                    <div class="desc_right td">
+                                                        <span class="code_patch">POST / Encryption Required
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">Req/Res Type</span>
+                                                    <div class="desc_right td">
+                                                        <span class="code_patch">application/json
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">TENANT</span>
+                                                    <div class="desc_right td">
+                                                        BUSINESS
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="api_doc_table">
+
+                                        <h2>Request</h2>
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table">
+                                                <div class="lst_hed tr">
+                                                    <span class="th">Parameter Name</span>
+                                                    <span class="th">M/O</span>
+                                                    <span class="th">Type(Size)</span>
+                                                    <span class="th">Description</span>
+                                                </div>
+
+
+
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">entityId</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">The Customer Id registered with the
+                                                        system
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">kitNo</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">Card proxy number or kit number
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">expiryDate</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">YYMM
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">dob</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(8) </div>
+                                                    <div class="desc_right td">DDMMYYYY
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="api_doc_table">
+
+                                        <h2>Response</h2>
+
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table">
+                                                <div class="lst_hed tr">
+                                                    <span class="th">Parameter Name</span>
+                                                    <span class="th">M/O</span>
+                                                    <span class="th">Type(Size)</span>
+                                                    <span class="th">Description</span>
+                                                </div>
+
+
+
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">cvv</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">CVV value
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="api_doc_right">
+
+
+                                    <div class="code_bx">
+                                        <div class="tlt_sec">
+                                            <!-- <p class="tlt">Response Structure</p> -->
+                                            <div class="tab-tlt-sec">
+                                                <ul class="nav nav-tabs ">
+                                                    <li class="active">
+                                                        <a href="#tab_default_1" data-toggle="tab">
+                                                            Request </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab_default_2" data-toggle="tab">
+                                                            Response </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab_default_3" data-toggle="tab">
+                                                            FAQ </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="ac_center">
+                                                    <span class="run_code">Run</span>
+                                                    <span class="edit_code"></span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab_default_1">
+
+
+
+                                                    <div class="c_prt">
+                                                        <div class="alm__progress-bar">
+                                                            <div>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <pre>
+                                                    <code class="language-json">
+                                                    {
+                                                        "name":" helloworld",
+                                                        "kitNo":"0000006000591",
+                                                        "expiryDate":"2110",
+                                                        "dob":"09031993"
+                                                    }
+
+                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane" id="tab_default_2">
+                                                    <div class="c_prt">
+                                                        <pre>
+                                                    <code class="language-json">
+                                                        {
+                                                            "result": {
+                                                            "cvv": “123”
+                                                            },
+                                                            "exception": null,
+                                                            "pagination": null
+                                                        }
+
+                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane" id="tab_default_3">
+                                                    <div class="c_prt">
+                                                        <pre>
+                                                    <code class="language-json">
+                                                         Try Something
+                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="api_doc_section" id="lckunlck">
+
+                            <div class="api_doc_header">
+                                <div class="api_doc_left">
+                                    <h2 class="api_tlt">Lock / Unlock</h2>
+                                </div>
+                                <div class="api_doc_right"></div>
+                            </div>
+
+                            <div class="api_doc_content">
+                                <div class="api_doc_left">
+                                    <div class="api_cont_txtarea">
+                                        <p>This API is to be used to fetch CVV of a registered card and applicable only
+                                            for
+                                            Virtual
+                                            Cards</p>
+                                    </div>
+
+                                    <div class="api_doc_table">
+
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table api_verticle_table">
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">API URL</span>
+                                                    <div class="desc_right td">
+                                                        <a href="">https://<< BASE URL>
+                                                                >/Yap/business-entity-manager/generateCVV</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">HTTP Method</span>
+                                                    <div class="desc_right td">
+                                                        <span class="code_patch">POST / Encryption Required
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">Req/Res Type</span>
+                                                    <div class="desc_right td">
+                                                        <span class="code_patch">application/json
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">TENANT</span>
+                                                    <div class="desc_right td">
+                                                        BUSINESS
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                    <div class="api_doc_table">
+
+                                        <h2>Request</h2>
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table">
+                                                <div class="lst_hed tr">
+                                                    <span class="th">Parameter Name</span>
+                                                    <span class="th">M/O</span>
+                                                    <span class="th">Type(Size)</span>
+                                                    <span class="th">Description</span>
+                                                </div>
+
+
+
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">entityId</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">The Customer Id registered with the
+                                                        system
+                                                        This
+                                                        API is to be used to fetch CVV of a registered card and
+                                                        applicable
+                                                        only
+                                                        for Virtual Cards
+
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">kitNo</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">Card proxy number or kit number
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">expiryDate</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">YYMM
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">dob</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(8) </div>
+                                                    <div class="desc_right td">DDMMYYYY
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="api_doc_table">
+
+                                        <h2>Response</h2>
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table">
+                                                <div class="lst_hed tr">
+                                                    <span class="th">Parameter Name</span>
+                                                    <span class="th">M/O</span>
+                                                    <span class="th">Type(Size)</span>
+                                                    <span class="th">Description</span>
+                                                </div>
+
+
+
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">cvv</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">CVV value
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="api_doc_right">
+
+
+                                    <div class="code_bx">
+                                        <div class="tlt_sec">
+                                            <!-- <p class="tlt">Response Structure</p> -->
+                                            <div class="tab-tlt-sec">
+                                                <ul class="nav nav-tabs ">
+                                                    <li class="active">
+                                                        <a href="#tab_lck_1" data-toggle="tab">
+                                                            Request </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab_lck_2" data-toggle="tab">
+                                                            Response </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab_lck_3" data-toggle="tab">
+                                                            FAQ </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="ac_center">
+                                                    <span class="run_code">Run</span>
+                                                    <span class="edit_code"></span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab_lck_1">
+
+                                                    <div class="c_prt">
+                                                        <div class="alm__progress-bar">
+                                                            <div>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <pre>
+                                                                    <code class="language-json">
+                                                                        {
+                                                                            "entityId":"12345678",
+                                                                            "entityType":"CUSTOMER",
+                                                                            "businessType":"BUSINESS",
+                                                                            "businessId":"+9191919191911",
+                                                                            "countryofIssue":"IND",
+                                                                            "cardType":"P",
+                                                                            "kitNo":"100000000032",
+                                                                            "title":"Mr",
+                                                                            "firstName":"TEST",
+                                                                            "lastName":"CUSTOMER",
+                                                                            "gender":"M",
+                                                                            "specialDate":"1999-09-29",
+                                                                            "contactNo":"+9191919191911",
+                                                                            "emailAddress":"email@m2p.in",
+                                                                            "address":"my address, my street",
+                                                                            "address2":"my locality",
+                                                                            "city":"mycity",
+                                                                            "state":"mystate",
+                                                                            "country":"India",
+                                                                            "pincode":"600000",
+                                                                            "idType":"TEST_AADHAAR",
+                                                                            "idNumber":"1234500001",
+                                                                            "idExpiry":"2020-12-12",
+                                                                            "eKycRefNo":"12345678",
+                                                                            "kycStatus":"FULL_KYC",
+                                                                            "countryCode":"12345",
+                                                                            "programType":" BUSINESS ",
+                                                                            "documents":[
+                                                                            {
+                                                                            " docType ":"PAN",
+                                                                            " docNo ":"ADOPA89013",
+                                                                            "docExpDate":null
+                                                                            },
+                                                                            {
+                                                                            " docType ":"PASSPORT",
+                                                                            " docNo ":"ADOPA89013",
+                                                                            " docExpDate ":"2025-12-12"
+                                                                            }
+                                                                            ],
+                                                                            "addressDto":{
+                                                                            "contactNo1":"+919677109523",
+                                                                            "contactNo2":"+919236634491",
+                                                                            "emailAddress1":"maddy@m2p.in",
+                                                                            "emailAddress2":"maddy.v@gmail.com",
+                                                                            "notification":"1010",
+                                                                            "address":[
+                                                                            {
+                                                                            "title":"PERMANENT,",
+                                                                            "address1":"Plot 23&23, AG1, Vidhya Apts,",
+                                                                            "address2":"Vidhya nagar 2nd St",
+                                                                            "address3":"Ullagaram",
+                                                                            "city":"Chennai",
+                                                                            "state":"TamilNadu",
+                                                                            "country":"India",
+                                                                            "pinCode":"600091"
+                                                                            }
+                                                                            ]
+                                                                            }
+                                                                        }
+                
+                                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane" id="tab_lck_2">
+                                                    <div class="c_prt">
+                                                        <pre>
+                                                                    <code class="language-json">
+                                                                        {
+                                                                            "result": {
+                                                                            "cvv": “123”
+                                                                            },
+                                                                            "exception": null,
+                                                                            "pagination": null
+                                                                        }
+                
+                                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane" id="tab_lck_3">
+                                                    <div class="c_prt">
+                                                        <pre>
+                                                                    <code class="language-json">
+                                                                         Try Something
+                                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="api_doc_section" id="paystore">
+
+                            <div class="api_doc_header">
+                                <div class="api_doc_left">
+                                    <h2 class="api_tlt">Pay a Merchant or Pay @ Store</h2>
+                                </div>
+                                <div class="api_doc_right"></div>
+                            </div>
+
+                            <div class="api_doc_content">
+                                <div class="api_doc_left">
+                                    <div class="api_cont_txtarea">
+                                        <p>This API is to be used to fetch CVV of a registered card and applicable only
+                                            for
+                                            Virtual
+                                            Cards</p>
+                                    </div>
+
+                                    <div class="api_doc_table">
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table api_verticle_table">
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">API URL</span>
+                                                    <div class="desc_right td">
+                                                        <a href="">https://<< BASE URL>
+                                                                >/Yap/business-entity-manager/generateCVV</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">HTTP Method</span>
+                                                    <div class="desc_right td">
+                                                        <span class="code_patch">POST / Encryption Required
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">Req/Res Type</span>
+                                                    <div class="desc_right td">
+                                                        <span class="code_patch">application/json
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="api_descs tr">
+
+                                                    <span class="th">TENANT</span>
+                                                    <div class="desc_right td">
+                                                        BUSINESS
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="api_doc_table">
+
+                                        <h2>Request</h2>
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table">
+                                                <div class="lst_hed tr">
+                                                    <span class="th">Parameter Name</span>
+                                                    <span class="th">M/O</span>
+                                                    <span class="th">Type(Size)</span>
+                                                    <span class="th">Description</span>
+                                                </div>
+
+
+
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">entityId</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">The Customer Id registered with the
+                                                        system
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">kitNo</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">Card proxy number or kit number
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">expiryDate</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">YYMM
+                                                    </div>
+                                                </div>
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">dob</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(8) </div>
+                                                    <div class="desc_right td">DDMMYYYY
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="api_doc_table">
+
+                                        <h2>Response</h2>
+                                        <div class="table_block">
+                                            <div class="api_lst_sec table api_table">
+                                                <div class="lst_hed tr">
+                                                    <span class="th">Parameter Name</span>
+                                                    <span class="th">M/O</span>
+                                                    <span class="th">Type(Size)</span>
+                                                    <span class="th">Description</span>
+                                                </div>
+
+
+
+                                                <div class="api_descs tr">
+                                                    <div class="desc_right td">cvv</div>
+                                                    <div class="desc_right td">M </div>
+                                                    <div class="desc_right td">String(16) </div>
+                                                    <div class="desc_right td">CVV value
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="api_doc_right">
+
+
+                                    <div class="code_bx">
+                                        <div class="tlt_sec">
+                                            <!-- <p class="tlt">Response Structure</p> -->
+                                            <div class="tab-tlt-sec">
+                                                <ul class="nav nav-tabs ">
+                                                    <li class="active">
+                                                        <a href="#tab_pay_1" data-toggle="tab">
+                                                            Request </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab_pay_2" data-toggle="tab">
+                                                            Response </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab_pay_3" data-toggle="tab">
+                                                            FAQ </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="ac_center">
+                                                    <span class="run_code">Run</span>
+                                                    <span class="edit_code"></span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab_pay_1">
+
+                                                    <div class="c_prt">
+                                                        <div class="alm__progress-bar">
+                                                            <div>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <pre>
+                                                                    <code class="language-json">
+                                                                        {
+                                                                            "entityId":" Cust001",
+                                                                            "kitNo":"0000006000591",
+                                                                            "expiryDate":"2110",
+                                                                            "dob":"09031993"
+                                                                        }
+                
+                                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane" id="tab_pay_2">
+                                                    <div class="c_prt">
+                                                        <pre>
+                                                                    <code class="language-json">
+                                                                        {
+                                                                            "result": {
+                                                                            "cvv": “123”
+                                                                            },
+                                                                            "exception": null,
+                                                                            "pagination": null
+                                                                        }
+                
+                                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane" id="tab_pay_3">
+                                                    <div class="c_prt">
+                                                        <pre>
+                                                                    <code class="language-json">
+                                                                         Try Something
+                                                                    </code></pre>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+
+                    <div class="api_doc_section" id="libraries">
+
+                        <div class="api_doc_header">
+                            <div class="api_doc_left">
+                                <!-- <div class="page_tag get_strt">Quick Start</div> -->
+                                <h2 class="api_tlt">Libraries</h2>
+                            </div>
+                            <div class="api_doc_right"></div>
+                        </div>
+
+                        <div class="api_doc_content">
+                            <div class="api_doc_left">
+                                <div class="api_cont_txtarea">
+                                    <div class="pge_srt">
+
+                                        <div class="secu pge_txt">
+
+                                            <p>We’ll be your backbone for all of your super powers. Just select the
+                                                language you have your prime or just start afresh,
+                                                because we’ve made it easier for you to learn and understand.</p>
+
+                                        </div>
+
+
+                                        <section id="ssl" class="lb-sec">
+                                            <div class="elpr_dev_tools get_strt_sec suport_sec">
+                                                <h2>Server-Side Libraries</h2>
+
+                                                <p class="sub-txt">Server-side SDKs make it easy for you to use
+                                                    Yap's REST APIs,
+                                                    generate
+                                                    payments models, and do other common server-side programming tasks.
+                                                    These helper libraries
+                                                    are
+                                                    available in a variety of popular server-side programming languages.
+                                                </p>
+
+                                                <div class="tool_sec">
+                                                    <div class="row">
+
+
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/node.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>Node</h3>
+                                                                        <p>YAP - Node </p>
+                                                                    </div>
+                                                                </span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/python.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>Python</h3>
+                                                                        <p>YAP - Python</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/ruby.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>Ruby</h3>
+                                                                        <p>YAP - Ruby</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/php.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>PHP</h3>
+                                                                        <p>YAP - PHP</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/java.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>Java</h3>
+                                                                        <p>YAP - Java</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </section>
+
+                                        <section id="csl" class="lb-sec">
+                                            <div class="elpr_dev_tools get_strt_sec suport_sec">
+                                                <h2>Client-Side Libraries</h2>
+
+                                                <p class="sub-txt">Use a client library (SDK) to quickly and
+                                                    easily get started with
+                                                    YAP
+                                                    API
+                                                    without worrying about the underlying set up.</p>
+
+                                                <div class="tool_sec">
+
+                                                    <div class="row">
+
+
+
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/web.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>Web</h3>
+                                                                        <p>YAP - Web </p>
+                                                                    </div>
+                                                                </span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/ios.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>iOS</h3>
+                                                                        <p>YAP - iOS</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/android.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>Android</h3>
+                                                                        <p>YAP - Android</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/react.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>React</h3>
+                                                                        <p>YAP - React</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/react.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>React native</h3>
+                                                                        <p>YAP - React native sdk</p>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="alrt-sec">
+                                                    <div class="img-sec">
+                                                        <img src="img/alert-triangle.svg">
+                                                    </div>
+                                                    <div class="txt-sec">
+                                                        Major version upgrades contain breaking changes. Carefully read
+                                                        the changelog, relevant
+                                                        migration guides, and test your integration when upgrading to a
+                                                        new major version.
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </section>
+
+                                        <section id="cl" class="lb-sec">
+                                            <div class="elpr_dev_tools get_strt_sec suport_sec">
+                                                <h2>Community Libraries</h2>
+
+                                                <p class="sub-txt">Find some of the many community-supported
+                                                    libraries available for
+                                                    Stripe
+                                                    listed below.</p>
+
+                                                <div class="tool_sec">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 d-flex no-pd pd-tab">
+                                                            <div class="tool_sec_inn">
+                                                                <span class="cov">
+                                                                    <div class="icn_sec">
+                                                                        <img src="img/github.svg">
+                                                                    </div>
+                                                                    <div class="cat_txt_sec">
+                                                                        <h3>Github</h3>
+                                                                        <p>Clone your copy </p>
+                                                                    </div>
+                                                                </span>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+
+
+                                            </div>
+                                        </section>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="api_doc_right">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="api_doc_section" id="faq">
+
+                        <div class="api_doc_header">
+                            <div class="api_doc_left">
+                                <!-- <div class="page_tag get_strt">Quick Start</div> -->
+                                <h2 class="api_tlt">FAQ</h2>
+                            </div>
+                            <div class="api_doc_right"></div>
+                        </div>
+
+                        <div class="api_doc_content">
+                            <div class="api_doc_left">
+                                <div class="api_cont_txtarea">
+                                    <div class="pge_srt">
+                                        <ul class="faq_qus">
+                                            <li><a href="#faq1">What are YAP's products? </a></li>
+                                            <li><a href="#faq2">How many banks does YAP support?</a></li>
+                                            <li><a href="#faq3">What type of information does YAP provide via
+                                                    Transactions?</a></li>
+                                            <li><a href="#faq4">How often do you pull transaction data?</a></li>
+                                            <li><a href="#faq5">How much does YAP cost? </a></li>
+                                            <li><a href="#faq6">Can I test YAP's data and products?</a></li>
+
+
+                                        </ul>
+
+
+                                        <div class="faq_desc_sec">
+
+                                            <div class="ind_code_sec">
+                                                <div class="desc" id="faq1">
+                                                    <h5>What are YAP's products?</h5>
+                                                    <p>All of our products can be accessed through a single integration,
+                                                        enabling you to
+                                                        build customized solutions that suit your business needs. You
+                                                        can find additional
+                                                        detail about all products in our documentation. If you require
+                                                        further information,
+                                                        please reach out through our <a href="">contact page.</a></p>
+                                                </div>
+
+                                                <div class="desc" id="faq2">
+                                                    <h5>How many banks does YAP support?</h5>
+                                                    <p>We support each of our products across thousands of financial
+                                                        institutions. A full
+                                                        list of supported institutions is available via the <a
+                                                            href="">API</a>. Please also
+                                                        feel free to reach out through our <a href="">contact page.</a>
+                                                        for more details.
+                                                    </p>
+                                                </div>
+
+                                                <div class="desc" id="faq3">
+                                                    <h5>What type of information does YAP provide via Transactions?</h5>
+                                                    <p>The Transactions endpoint returns data elements including current
+                                                        and available
+                                                        balance, name of the user’s bank account, transaction pending
+                                                        status,
+                                                        geo-coordinates of transaction location, transaction
+                                                        categorization, and a
+                                                        statistical confidence score for category and location. If
+                                                        there’s something else
+                                                        you’d like to see, we’d love to hear from you. Share your
+                                                        feedback and get answers
+                                                        to any additional questions you have about our products and your
+                                                        data needs by
+                                                        contacting our team.</p>
+                                                </div>
+
+                                                <div class="desc" id="faq4">
+                                                    <h5> How often do you pull transaction data?</h5>
+                                                    <p>YAP pulls transaction data multiple times per day. When new data
+                                                        is ready, we can
+                                                        notify you via email.</p>
+                                                </div>
+
+                                                <div class="desc" id="faq5">
+                                                    <h5>How often do you pull transaction data?</h5>
+                                                    <p>Your first live accounts are free in the development environment,
+                                                        and there is no
+                                                        limit on the number of Sandbox items that you may generate. You
+                                                        can learn more about
+                                                        our production plans on our pricing page. Reach out to us to
+                                                        receive details for all
+                                                        products in production. Looking forward to learning about what
+                                                        you’re building!</p>
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="api_doc_right">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+        </section>
+
+
+
+    </section>
+
+
+    <!-- main js -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- less js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+    <!-- for code box -->
+
+
+
+</body>
+
+</html>
